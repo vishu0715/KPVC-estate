@@ -145,8 +145,7 @@ export default function Profile() {
         <input type="text" placeholder="Username" defaultValue={currentUser.username} id='username' className='border p-3 rounded-lg' onChange={handleChange}/>
         <input type="email" placeholder="email" defaultValue={currentUser.email} id='email' className='border p-3 rounded-lg' onChange={handleChange}/>
         <input type="password" placeholder="password" id='password' onChange={handleChange} className='border p-3 rounded-lg'/>
-        <button disabled={loading} className='bg-slate-700 text-white p-3 rounded-lg uppercase hover:opacity-95 disabled:opacity-80'>{loading ? 'Updating...' : 'Update'}</button>
-
+        <button disabled={loading} className='bg-slate-700 text-white p-3 rounded-lg uppercase hover:opacity-95 disabled:opacity-80'>{loading ? 'Updating...' : 'Update'}</button>        
       </form>
       <div className='flex justify-between mt-5'>
         <span onClick={handleDeleteUser} className='text-red-700 cursor-pointer'>Delete account</span>
